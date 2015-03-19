@@ -1,0 +1,15 @@
+<table class="table">
+	<tr>
+		<td>
+			<h1><%= @event.name %></h1>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2><%= simple_format(@event.description) %></h2>
+		</td>
+	</tr>
+</table>
+
+<hr>
+<%= link_to 'Back', events_path, class:'btn btn-info btn-lg' %>
